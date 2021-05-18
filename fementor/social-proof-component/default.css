@@ -2,5 +2,97 @@
     padding : 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    font-size : 18px;
+    font-size : 16px;
+}
+
+main {
+    margin : 50px auto;
+}
+
+main section.main-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+main section.main-content  section.main-text {
+    width:35%;
+}
+
+main section.main-content section.main-text div.hightlight {
+    font-size: 40px;
+    margin-bottom: 30px ;
+    font-weight: bold;
+}
+
+main section.main-content section.ratings {
+    width: 35%;
+    display: flex;
+    flex-flow: column;
+}
+
+main section.main-content section.ratings article.business-rating {
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    width:70%;
+}
+
+main section.main-content section.ratings article.business-rating span:nth-child(2){
+    padding-left : 10px;
+}
+
+main section.main-content section.ratings article.business-rating:nth-child(2){
+    margin-left : 10%;
+    margin-right:10%;
+}
+
+main section.main-content section.ratings article.business-rating:nth-child(3){
+    margin-left:20%;
+}
+
+
+main section.buyers-comments-container{
+    display: flex;
+    margin:70px auto;
+    width : 90%;
+}
+
+main section.buyers-comments-container article.buyer-comment {
+    padding : 30px;
+    margin: 0 30px;
+    background-color: mediumvioletred;
+    border-radius: 15px;
+    color : white;
+    display:grid;
+    grid-template-columns: 75px auto;
+    grid-template-rows: 25px 50px auto;
+}
+
+main section.buyers-comments-container article.buyer-comment:nth-child(2){
+    position: relative;
+    top:20px;
+}
+
+main section.buyers-comments-container article.buyer-comment:nth-child(3){
+    position: relative;
+    top:40px
+}
+
+main section.buyers-comments-container article.buyer-comment figure.buyer-profile-pic img {
+    border-radius:100%;
+}
+
+main section.buyers-comments-container article.buyer-comment figure.buyer-profile-pic {
+    grid-row-start : 1;
+    grid-row-end: 3;
+}
+
+main section.buyers-comments-container article.buyer-comment div.buyer-status{
+    color:lightpink;
+}
+
+main section.buyers-comments-container article.buyer-comment div.comment-text{
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
