@@ -1,0 +1,105 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', 'sans serif';
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(229, 6%, 66%);
+}
+
+main {
+    padding: 30px;
+    margin: 0 auto;
+}
+
+main section.headlines-container {
+    text-align: center;
+    margin : 50px auto;
+    width:95%;
+}
+
+main section.headlines-container div.buzzwords,  
+main section.headlines-container div.buzz-hightlight,
+main section.cards-container article.card h1.card-title {
+    font-size : 25px;
+    color: hsl(229, 6%, 33%);
+}
+
+main section.headlines-container div.buzz-hightlight {
+    font-weight : bolder;
+}
+
+main section.headlines-container div.buzz-content {
+    margin-top: 20px;
+}
+
+main section.cards-container article.card{
+    border-radius: 10px;
+    box-shadow: 10px 5px 20px hsl(229, 6%, 66%);
+    padding : 30px;
+    margin: 15px 0;
+    height : 230px;
+    display: flex;
+    flex-flow : column wrap;
+    justify-content: space-between;
+}
+
+main section.cards-container article.card figure{
+    display: flex;
+    justify-content:flex-end;
+}
+
+
+main section.cards-container article.card:first-child{
+    border-top:10px solid hsl(180, 62%, 55%);
+}
+
+main section.cards-container article.card:nth-child(2){
+    border-top:10px solid hsl(0, 78%, 62%);
+}
+
+main section.cards-container article.card:nth-child(3){
+    border-top:10px solid hsl(34, 97%, 64%);
+}
+
+main section.cards-container article.card:last-child{
+    border-top:10px solid hsl(212, 86%, 64%);
+}
+
+main section.cards-container article.card h1.card-title{
+    margin-bottom: 20px;;
+}
+
+@media screen and (min-width: 600px){
+    main section.headlines-container {
+        width : 40%;
+        margin : 50px auto;
+        text-align: center;
+    }
+
+    /*Grid composition*/
+    main section.cards-container{
+        display: grid;
+        grid-template-rows: 4;
+        grid-template-columns: 3;
+        grid-column-gap: 30px;
+    } 
+
+    main section.cards-container article.card:nth-child(2),
+    main section.cards-container article.card:nth-child(3){
+        grid-column-start:2 ;
+    }
+
+    main section.cards-container article.card:last-child{
+        grid-column-start: 3;
+    }
+
+    main section.cards-container article.card:first-child,
+    main section.cards-container article.card:last-child{
+        grid-row-start: 2;
+        grid-row-end:3;
+        position:relative;
+        bottom: 150px;
+    }
+}
+
+
