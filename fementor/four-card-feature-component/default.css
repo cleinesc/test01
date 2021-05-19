@@ -79,14 +79,18 @@ main section.cards-container article.card h1.card-title{
     /*Grid composition*/
     main section.cards-container{
         display: grid;
-        grid-template-rows: 4;
-        grid-template-columns: 3;
+        grid-template-rows: 170px 170px 170px 170px;
+        grid-template-columns: 33% 34% 33%;
         grid-column-gap: 30px;
     } 
 
     main section.cards-container article.card:nth-child(2),
     main section.cards-container article.card:nth-child(3){
         grid-column-start:2 ;
+    }
+
+    main section.cards-container article.card:nth-child(3){
+        grid-row-start:3 ;
     }
 
     main section.cards-container article.card:last-child{
@@ -97,8 +101,6 @@ main section.cards-container article.card h1.card-title{
     main section.cards-container article.card:last-child{
         grid-row-start: 2;
         grid-row-end:3;
-        position:relative;
-        bottom: 150px;
     }
 }
 
