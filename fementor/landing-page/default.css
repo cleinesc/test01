@@ -52,6 +52,37 @@ main section.main-content button{
     color: blueviolet;
 }
 
+main section.main-content button:active {
+    background-color: blueviolet;
+    color:white;
+}
+
+footer {
+    margin-bottom:20px;
+}
+
+footer div.social-networks-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+footer div.social-networks-links a img.logo {
+    width : 30px;
+    padding: 10px;
+}
+
+footer div.attributions{
+    font-size: 12px;
+    color : white;
+    opacity : 50%;
+    text-align: center;
+}
+
+footer div.attributions a{
+    color:pink;
+}
+
 /*Desktop design*/
 @media screen and (min-width:600px){
     body {
@@ -75,5 +106,10 @@ main section.main-content button{
         flex-flow: column wrap;
         justify-content: center;
     }
-}
+
+    footer div.social-networks-links {
+        display: flex;
+        justify-content: flex-end;
+        padding : 0 100px;
+    }
 }
