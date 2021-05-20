@@ -1,0 +1,77 @@
+* {
+    margin : 0;
+    padding:0;
+    font-family : 'Kumbh Sans', 'sans serif';
+   
+}
+
+body{
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: hsl(237, 12%, 33%);
+}
+
+/*Mobile-first*/
+
+main {padding : 20px;}
+
+main figure {
+    position: relative;
+    z-index: 1;
+    padding-top : 30px;
+}
+
+main figure div.background{
+    background-image:url('img/bg-pattern-mobile.svg');
+    background-repeat:no-repeat;
+    background-position: bottom;
+    text-align: center;
+}
+
+main figure div.background img{
+    max-width:100%;
+}
+
+main section.FAQ-container{
+    padding : 30px;
+    background-color: white;
+    border-radius : 20px;
+    position: relative;
+    top: -100px;
+    z-index:0;
+    padding-top: 90px;
+}
+
+main section.FAQ-container h1 {
+    text-align: center;
+    margin : 30px auto;
+}
+
+main section.FAQ-container div.QA{
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    margin-bottom: 15px;
+}
+
+main section.FAQ-container div.QA p.question {
+    margin-bottom: 15px;
+}
+
+main section.FAQ-container div.QA p.reponse {
+    color:hsl(240, 6%, 50%);
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    color:white;
+    opacity : 50%;
+}
+
+footer p.attribution {
+    margin-bottom : 30px;
+}
+
+footer p.attribution a{
+    color :pink;
+}
