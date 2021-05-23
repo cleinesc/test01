@@ -8,9 +8,10 @@
   <link rel="stylesheet" href="default.css">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
-  <title>Frontend Mentor | FAQ Accordion Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+  <script type="text/javascript" src="script.js"></script>
+
+<title>Frontend Mentor | FAQ Accordion Card</title>
 
 </head>
 <body>
@@ -22,34 +23,39 @@
       </div>
      
     </figure>
+
     <section class="FAQ-container">
+
       <h1>FAQ</h1>
-      <div class="QA">
-        <p class="question">How many team members can I invite?</p>
-        <p class="reponse">You can invite up to 2 additional users on the Free plan. There is no limit on 
+      <div onclick="toggle1()" class="QA">
+        <div class="question-container">
+          <p class="question">How many team members can I invite? </p>
+          <img class="arrow" src="img/icon-arrow-down.svg"/>
+        </div>
+        <p class="reponse" id="reponse1">You can invite up to 2 additional users on the Free plan. There is no limit on 
         team members for the Premium plan.</p>
       </div>
 
-      <div class="QA">
-      <p class="question">What is the maximum file upload size?</p>
-      <p class="reponse">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+      <div onclick="toggle2()" class="QA">
+        <div class="question-container"><p class="question">What is the maximum file upload size? </p><img class="arrow" src="img/icon-arrow-down.svg"/></div>
+      <p class="reponse" id="reponse2">No more than 2GB. All files in your account must fit your allotted storage space.</p>
     </div>
     
       
-      <div class="QA">
-      <p class="question">How do I reset my password?</p>
-      <p class="reponse">Click “Forgot password” from the login page or “Change password” from your profile page.
+      <div onclick="toggle3()" class="QA">
+        <div  class="question-container"><p class="question">How do I reset my password? </p><img class="arrow" src="img/icon-arrow-down.svg"/></div>
+      <p class="reponse" id="reponse3">Click “Forgot password” from the login page or “Change password” from your profile page.
       A reset link will be emailed to you.</p>
     </div>
     
-      <div class="QA">
-      <p class="question">Can I cancel my subscription?</p>
-      <p class="reponse">Yes! Send us a message and we’ll process your request no questions asked.</p>
+      <div onclick="toggle4()" class="QA">
+        <div  class="question-container"><p class="question">Can I cancel my subscription? </p><img class="arrow" src="img/icon-arrow-down.svg"/></div>
+      <p class="reponse" id="reponse4">Yes! Send us a message and we’ll process your request no questions asked.</p>
     </div>
     
-      <div class="QA">
-      <p class="question">Do you provide additional support?</p>
-      <p class="reponse">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+      <div onclick="toggle5()" class="QA">
+        <div  class="question-container"><p class="question">Do you provide additional support? </p><img class="arrow" src="img/icon-arrow-down.svg"/></div>
+      <p class="reponse" id="reponse5">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
     </div>
     </section>
   </main>
