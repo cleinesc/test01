@@ -37,6 +37,7 @@ main article.my-article section.article-footer {
     display: grid;
     grid-template-columns: 40px auto 40px;
     grid-template-rows: 40px;
+    padding-top:0;
 
 }
 
@@ -73,4 +74,23 @@ footer p.attribution{
 
 footer p.attribution a{
     color: hsl(217, 19%, 35%)
+}
+
+@media screen and (min-width:760px){
+    main article.my-article {
+        margin-top :150px;
+        max-width : 60%;
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 75% 25%;
+    }
+
+    main article.my-article figure.head-img-article img{
+        border-radius: 15px 0 0 15px;
+        height: 100%;
+    }
+
+    main article.my-article figure.head-img-article {
+        grid-row : 1 /span 2;
+    }
 }
