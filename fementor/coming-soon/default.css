@@ -23,6 +23,7 @@ header figure img {
     width : 130px;
 }
 
+
 main figure div.main-picture {
     background-image: url("img/hero-mobile.jpg");
     background-repeat: no-repeat;
@@ -105,4 +106,71 @@ footer p.attribution a{
     color:hsl(0, 93%, 68%);
 }
 
+@media screen and (min-width:420px){
+    body {
+        background-image: url("img/bg-pattern-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
+    header figure{
+        margin-left : 100px;
+        margin-top: 30px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        min-height: 650px;
+        align-items: stretch;
+    }
+
+    main figure {
+        min-height: 100%;
+        width: 50%;
+    }
+
+    main figure div.main-picture {
+        position: static;
+        min-height: 130%;
+        width: 100%;
+        background-image: url("img/hero-desktop.jpg");
+        margin : -95px 0 0 30px;
+    }
+
+    main section.container {
+        width:30%;
+        margin : 0 auto 0 100px;
+        min-height: 100%;
+    }
+
+    main h1.headlines {
+        text-align: left;
+        font-size: 60px;
+        margin-top: 100px;;
+    }
+
+    main section.container form.contact-form {
+        margin : 30px 0;
+        max-width: 100%;
+    }
+
+    main section.container form.contact-form div.form-block.email input {
+        width: 100%;
+        padding-right:0;
+        border-radius : 10px 0 0 10px;
+    }
+
+    main section.container form.contact-form div.form-block.submit button {
+        margin-left: 0;
+    } 
+
+    footer {
+        width : 50%;
+    }
+
+    footer p.attribution {
+        margin-top: -50px;
+    }
+
+}
