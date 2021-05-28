@@ -1,0 +1,106 @@
+* {
+    padding : 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+html, body{
+    min-height: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    color : white;
+}
+
+footer {
+    text-align: center;
+    color : white;
+    margin-top: 60px;
+}
+
+footer p.attribution a{
+    color:hsl(229, 7%, 55%);
+}
+
+/*Mobile-first*/
+body {
+    background-image: url("img/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding : 30px;
+
+}
+
+main section {
+    padding : 30px;
+    background-color:hsl(228, 56%, 26%) ;
+    margin-bottom: 30px;
+    border-radius : 20px;
+}
+
+main section.brand-container {
+    border-radius : 20px 100px 20px 20px;
+}
+
+main section.brand-container div.options{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main section.brand-container div.options figure {
+    padding: 5px;
+    background-color: hsl(229, 57%, 11%);
+    width : 35px;
+    height: 35px;
+    margin-right : 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top : 30px;
+}
+
+main section.slider-container {
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    grid-template-rows: 25px 0px 0px;
+}
+
+main section.slider-container p:first-of-type{
+    text-align: center;
+    grid-column: span 3;
+}
+
+main section.slider-container p:last-of-type{
+    background-color:white;
+    border-radius:20px;
+    color: hsl(229, 57%, 11%);
+    text-align: center;
+    padding : 10px;
+    grid-row : start 4;
+    grid-column-start : 2;
+    position: relative;
+    bottom:-50px;
+}
+
+main section.slider-container p:last-of-type span.number{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+main section.slider-container div.slider{
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25px 25px;
+}
+
+main section.slider-container div.slider input#slider{
+    grid-column: span 2;
+}
+
+main section.slider-container div.slider label.label-max{
+    text-align:right;
+}
+
