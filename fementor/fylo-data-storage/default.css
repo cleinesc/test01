@@ -104,3 +104,49 @@ main section.slider-container div.slider label.label-max{
     text-align:right;
 }
 
+@media screen and (min-width:450px) {
+    body{
+        background-image: url("img/bg-desktop.png");
+        background-color: hsl(229, 57%, 11%);
+    }
+    
+    main {
+        display : flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    main section{
+        margin: 100px 30px; 
+    }
+
+    main section.slider-container{
+        flex-grow: 2;
+        grid-template-columns : 33% 33% 33%;
+        padding-top:60px;
+    }
+
+    main section.slider-container p:first-of-type{
+        text-align:left;
+    }
+
+
+    main section.slider-container p:last-of-type{
+        grid-row : start 1;
+        grid-column-start : 3;
+        top:-120px;
+        height:40px;
+        max-width: 140px;;
+    }
+
+    main section.slider-container p:last-of-type::after{
+        border-right: 20px white solid;
+        border-bottom : 20px transparent solid;
+        border-top: 20px transparent solid;
+        border-left:20px transparent solid;
+        position: absolute;
+        content:'';
+        top:40px;
+        right : 0;
+    }
+}
