@@ -114,6 +114,8 @@ main section.slider-container div.slider label.label-max{
         display : flex;
         flex-flow: row wrap;
         justify-content: center;
+        max-width: 790px;
+        margin: 150px auto;
     }
 
     main section{
